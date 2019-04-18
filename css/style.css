@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  min-height: 100vh;
+  font-size: 13px;
+  background-color: #daaaf0;
+}
+.wrapper {
+  /* max-width: 1200px; */
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.user__label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+.user__input {
+  padding: 8px;
+  border: solid #bbb 2px;
+  width: 12em;
+}
+.user__button {
+  padding: 8px;
+  color: #fff;
+  background: #a22ada;
+  font-weight: bold;
+  width: 6em;
+  cursor: pointer;
+  border: 0;
+}
+.user-list {
+  text-align: left;
+  font-style: italic;
+  margin: 50px 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.user-list li {
+  border: solid #bbb 2px;
+  background: #fff;
+  color: #a22ada;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 3em;
+  margin: 0 10px 10px 0;
+  font-style: normal;
+  box-shadow: 0 0 9px rgb(97, 96, 96);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user-list li:last-child {
+  margin-right: 0;
+}
+@media all and (min-width: 768px) {
+  .user__label {
+    font-size: 16px;
+  }
+  .user__input {
+    width: 20em;
+  }
+  .user-list li {
+    font-size: 5em;
+    margin: 0 20px 20px 0;
+  }
+}
